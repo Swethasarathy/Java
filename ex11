@@ -1,0 +1,9 @@
+public class Main {
+     public static void main(String[] args) {
+        double r = 7.5;
+        double perimeter = 2 * 3.14 * r;
+        double area = 3.14 * radius * r;
+        System.out.println("Area of circle  is " + area);
+        System.out.println("Perimeter of circle is " + perimeter);
+    }
+}
