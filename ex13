@@ -1,0 +1,11 @@
+public class Main {
+ public static void main(String[] strings) {
+
+        double w = 5.6;
+        double h = 8.5;
+        double area = w * h;
+        System.out.printf("Area of rectangle = "+ area);
+		double perimeter = 2*(h + w);
+		System.out.printf("\nPerimeter of rectangle = "+ perimeter);
+    }
+}
