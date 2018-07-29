@@ -1,0 +1,8 @@
+import java.util.Scanner;
+import java.io.File;
+public class Main 
+{
+   public static void main(String[] args) {
+  System.out.println("/C/Users/HP/sample.txt  : " + new File("sample.txt").length() + " bytes");
+ }
+}
