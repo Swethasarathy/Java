@@ -1,0 +1,15 @@
+import java.lang.*;
+ public class Main 
+ {
+ public static void main(String[] args)
+ {
+    String ch1 = "";    
+	int l = ch1.length();
+	if(l >= 3)
+		System.out.println( ch1.substring(0, 3));
+	else if(l == 1)
+		System.out.println( (ch1.charAt(0)+"##"));
+	else
+		System.out.println("###");
+	}
+}
