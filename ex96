@@ -1,0 +1,29 @@
+import java.util.*; 
+import java.io.*; 
+ public class Main
+ {
+ public static void main(String[] args)
+ {
+	  int[] n = {10, 70, 80, 40, 20, 13, 50};
+      boolean id = false;
+	  int r=0;
+	  int a = 10;
+	  int b = 20;
+    
+    for(int i = 0; i < n.length; i++) {
+        if(n[i] == a)
+            id = true;
+                    
+        if(id && n[i] == b)
+		{
+         System.out.printf( String.valueOf(true));	
+         r = 1		 ;
+		}
+    }
+     if (r==0)                             
+	   {	 
+         System.out.printf( String.valueOf(false));
+	    }
+		System.out.printf("\n");
+    }
+}
