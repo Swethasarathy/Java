@@ -1,0 +1,40 @@
+import java.io.*;
+public class Main 
+{
+	public static void main(String[] args) {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		try {
+			int s = 0;
+			System.out.println("Enter the number");
+			String ch = br.readLine();
+			char[] str = ch.toCharArray();
+			for (int i = 0; i < str.length; i ++) {
+				s += str[i] - '0';
+			}
+			System.out.println("Original Number: "+ch);
+			print(s);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void print(int i) {
+		int a,b,c;
+		String[] number = {"zero","one","two","three","four","five","six","seven","eight","nine"};
+		System.out.println("Sum of the digits : "+i);
+		if (i < 10) {
+			System.out.println(number[i]);
+		}
+		else if (i < 100) {
+			a = i / 10;
+			b = i - a *10;
+			System.out.println("In words: "+number[a] + " " + number[b]);
+		}
+		else {
+			a = i / 100;
+			b = (i - a * 100) / 10;
+			c = i - a * 100 - b * 10;
+			System.out.println("In words: "+number[a] + " " + number[b] + " " + number[c]);
+		}
+	}
+}
