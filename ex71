@@ -1,0 +1,10 @@
+import java.lang.*;
+ public class Main 
+ {
+ public static void main(String[] args)
+ {
+    String ch1 = "Web";    
+	String ch2 = "Programming"; 
+	System.out.println(ch1.substring(1) + ch2.substring(1));
+	} 
+}
