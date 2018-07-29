@@ -1,0 +1,10 @@
+import java.util.*; 
+import java.io.*; 
+ public class Main
+ {
+ public static void main(String[] args)
+ {
+   String ch = "Welcome to web programming";
+    System.out.println(ch.startsWith("Welcome"));
+  }
+}
