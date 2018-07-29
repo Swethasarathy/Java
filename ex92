@@ -1,0 +1,22 @@
+import java.util.*; 
+public class Main
+{
+ public static void main(String[] args)
+ {
+    int[] n = {5, 7, 2, 34, 29};
+	int even = 0, odd = 0;
+	System.out.println("Original Array: "+Arrays.toString(n)); 
+	    
+    for(int i = 0; i < n.length; i++) {
+        if(n[i] % 2 == 0)
+		{         
+         even++;
+		}
+		else
+		   odd++;	
+    }                 
+    System.out.printf("\nNumber of even elements in the array: %d",even);
+	System.out.printf("\nNumber of odd elements in the array: %d",odd);
+	System.out.printf("\n");	
+  }
+}
