@@ -1,0 +1,15 @@
+import java.util.*; 
+import java.io.*; 
+ public class Main
+ {
+ public static void main(String[] args)
+ {
+   String str = "Python";
+    int len = 3;
+    if (len > str.length()) {
+      len = str.length();
+    }
+    String str2 = str.substring(str.length()-3);
+    System.out.println(str2 + str + str2);
+  }
+}
