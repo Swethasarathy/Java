@@ -1,0 +1,16 @@
+import java.util.*; 
+import java.io.*; 
+ public class Main
+ {
+ public static void main(String[] args)
+ {
+    int n;
+        Scanner in= new Scanner(System.in);
+        System.out.println("\nEnter the value of n");
+        n =in.nextInt();
+        String[] a = new String[n];
+	    for(int i = 0; i < n; i++)
+        a[i] = String.valueOf(i);                                  
+	    System.out.println("New Array: "+Arrays.toString(a)); 
+	 }
+}
