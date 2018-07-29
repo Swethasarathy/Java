@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main 
+{
+public static void main(String[] args) 
+{
+		int c = 0;
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter a number");
+		int num = in.nextInt();
+		while (num != 1) {
+		    System.out.println(num);
+			if (num % 2 == 0) 
+			{
+				num = num / 2;
+				c += 1;
+			}
+			else {
+				num = (3 * num + 1) / 2;
+				c += 1;
+			}
+		}
+		System.out.println(c);
+		in.close();
+	}
+}
