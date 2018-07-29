@@ -1,0 +1,23 @@
+import java.util.*; 
+import java.io.*; 
+ public class Main
+ {
+ public static void main(String[] args)
+ {
+    int[] n = {1, 7, 8, 5, 7, 13, 0, 2, 4, 9};
+	int i = 0;
+    System.out.println("Original Array: "+Arrays.toString(n)); 
+    while(i < n.length && n[i] % 2 == 0)
+        i++;
+    for(int j = i + 1; j < n.length; j++) 
+    {
+        if(n[j] % 2 != 0) {
+            int temp = n[i];
+            n[i] = n[j];
+            n[j] = temp;
+            i++;
+        }
+    }                                                    
+  System.out.println("New Array: "+Arrays.toString(n)); 
+  }
+}
